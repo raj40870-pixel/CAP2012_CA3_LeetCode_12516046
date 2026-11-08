@@ -2,7 +2,7 @@
 
 ![C++](https://img.shields.io/badge/Language-C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)
 ![Status](https://img.shields.io/badge/Status-In%20Progress-blue?style=for-the-badge)
-![Problems](https://img.shields.io/badge/Problems%20Solved-11%2F16-orange?style=for-the-badge)
+![Problems](https://img.shields.io/badge/Problems%20Solved-12%2F16-orange?style=for-the-badge)
 
 ## 📌 Student Details
 - **Student Name:** Kamaljit
@@ -38,7 +38,7 @@ The repository is structured into three folders according to problem difficulty 
 | 09 | [232](https://leetcode.com/problems/implement-queue-using-stacks/) | Implement Queue using Stacks | **Easy** | Unit IV | ✅ Solved | [09_LC232](./Easy/09_LC232_ImplementQueueUsingStacks_Easy.cpp) |
 | 10 | [189](https://leetcode.com/problems/rotate-array/) | Rotate Array | **Medium** | Unit II | ✅ Solved | [10_LC189](./Medium/10_LC189_RotateArray_Medium.cpp) |
 | 11 | [019](https://leetcode.com/problems/remove-nth-node-from-the-end-of-list/) | Remove Nth Node from the End of List | **Medium** | Unit III | ✅ Solved | [11_LC019](./Medium/11_LC019_RemoveNthNodeFromEnd_Medium.cpp) |
-| 12 | [056](https://leetcode.com/problems/merge-intervals/) | Merge Intervals | **Medium** | Unit II | ⏳ Pending | [12_LC056](./Medium/12_LC056_MergeIntervals_Medium.cpp) |
+| 12 | [056](https://leetcode.com/problems/merge-intervals/) | Merge Intervals | **Medium** | Unit II | ✅ Solved | [12_LC056](./Medium/12_LC056_MergeIntervals_Medium.cpp) |
 | 13 | [155](https://leetcode.com/problems/min-stack/) | Min Stack | **Medium** | Unit IV | ⏳ Pending | [13_LC155](./Medium/13_LC155_MinStack_Medium.cpp) |
 | 14 | [622](https://leetcode.com/problems/design-circular-queue/) | Design Circular Queue | **Medium** | Unit IV | ⏳ Pending | [14_LC622](./Medium/14_LC622_DesignCircularQueue_Medium.cpp) |
 | 15 | [224](https://leetcode.com/problems/basic-calculator/) | Basic Calculator | **Hard** | Unit IV | ⏳ Pending | [15_LC224](./Hard/15_LC224_BasicCalculator_Hard.cpp) |

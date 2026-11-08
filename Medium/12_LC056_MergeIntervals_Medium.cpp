@@ -1,35 +1,29 @@
-/**
- * Course: CAP2012 - Data Structures
- * Assessment: CA3 (LeetCode Problem Solving using C/C++)
- * Section: D1P2501 | Group: 1
- * Student Name: Kamaljit
- * Registration Number: 12516046
- * 
- * Problem 12: LeetCode 056 - Merge Intervals
- * Level: Medium
- * Unit: II
- * Topics: Arrays, Sorting, Merging
- * LeetCode URL: https://leetcode.com/problems/merge-intervals/
- *
- * Approach:
- * - [To be documented upon solution completion]
- *
- * Complexity:
- * - Time Complexity: O(...)
- * - Space Complexity: O(...)
- */
+// Student Name: Kamaljit
+// Registration Number: 12516046
+// Problem: LeetCode 056 - Merge Intervals
 
-#include <iostream>
 #include <vector>
-#include <string>
-#include <stack>
-#include <queue>
 #include <algorithm>
-
 using namespace std;
 
-// Solution class skeleton:
 class Solution {
 public:
-    // Paste/Write C++ solution here
+    vector<vector<int>> merge(vector<vector<int>>& intervals) {
+        if (intervals.empty()) return {};
+
+        sort(intervals.begin(), intervals.end());
+
+        vector<vector<int>> merged;
+        merged.push_back(intervals[0]);
+
+        for (int i = 1; i < intervals.size(); i++) {
+            if (intervals[i][0] <= merged.back()[1]) {
+                merged.back()[1] = max(merged.back()[1], intervals[i][1]);
+            } else {
+                merged.push_back(intervals[i]);
+            }
+        }
+
+        return merged;
+    }
 };
