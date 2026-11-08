@@ -1,35 +1,57 @@
-/**
- * Course: CAP2012 - Data Structures
- * Assessment: CA3 (LeetCode Problem Solving using C/C++)
- * Section: D1P2501 | Group: 1
- * Student Name: Kamaljit
- * Registration Number: 12516046
- * 
- * Problem 14: LeetCode 622 - Design Circular Queue
- * Level: Medium
- * Unit: IV
- * Topics: Circular queue, FRONT, REAR, enqueue/dequeue
- * LeetCode URL: https://leetcode.com/problems/design-circular-queue/
- *
- * Approach:
- * - [To be documented upon solution completion]
- *
- * Complexity:
- * - Time Complexity: O(...)
- * - Space Complexity: O(...)
- */
+// Student Name: Kamaljit
+// Registration Number: 12516046
+// Problem: LeetCode 622 - Design Circular Queue
 
-#include <iostream>
 #include <vector>
-#include <string>
-#include <stack>
-#include <queue>
-#include <algorithm>
-
 using namespace std;
 
-// Solution class skeleton:
-class Solution {
+class MyCircularQueue {
+private:
+    vector<int> q;
+    int front;
+    int rear;
+    int size;
+    int capacity;
+
 public:
-    // Paste/Write C++ solution here
+    MyCircularQueue(int k) {
+        capacity = k;
+        q.resize(k);
+        front = 0;
+        rear = -1;
+        size = 0;
+    }
+
+    bool enQueue(int value) {
+        if (isFull()) return false;
+        rear = (rear + 1) % capacity;
+        q[rear] = value;
+        size++;
+        return true;
+    }
+
+    bool deQueue() {
+        if (isEmpty()) return false;
+        front = (front + 1) % capacity;
+        size--;
+        return true;
+    }
+
+    int Front() {
+        if (isEmpty()) return -1;
+        return q[front];
+    }
+
+    int Rear() {
+        if (isEmpty()) return -1;
+        return q[rear];
+    }
+
+    bool isEmpty() {
+        return size == 0;
+    }
+
+    bool isFull() {
+        return size == capacity;
+    }
 };
