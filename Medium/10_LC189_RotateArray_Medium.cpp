@@ -1,35 +1,29 @@
-/**
- * Course: CAP2012 - Data Structures
- * Assessment: CA3 (LeetCode Problem Solving using C/C++)
- * Section: D1P2501 | Group: 1
- * Student Name: Kamaljit
- * Registration Number: 12516046
- * 
- * Problem 10: LeetCode 189 - Rotate Array
- * Level: Medium
- * Unit: II
- * Topics: Arrays, traversal, array manipulation
- * LeetCode URL: https://leetcode.com/problems/rotate-array/
- *
- * Approach:
- * - [To be documented upon solution completion]
- *
- * Complexity:
- * - Time Complexity: O(...)
- * - Space Complexity: O(...)
- */
+// Student Name: Kamaljit
+// Registration Number: 12516046
+// Problem: LeetCode 189 - Rotate Array
 
-#include <iostream>
 #include <vector>
-#include <string>
-#include <stack>
-#include <queue>
-#include <algorithm>
-
 using namespace std;
 
-// Solution class skeleton:
 class Solution {
+private:
+    void reverseArray(vector<int>& nums, int start, int end) {
+        while (start < end) {
+            int temp = nums[start];
+            nums[start] = nums[end];
+            nums[end] = temp;
+            start++;
+            end--;
+        }
+    }
+
 public:
-    // Paste/Write C++ solution here
+    void rotate(vector<int>& nums, int k) {
+        int n = nums.size();
+        k = k % n;
+
+        reverseArray(nums, 0, n - 1);
+        reverseArray(nums, 0, k - 1);
+        reverseArray(nums, k, n - 1);
+    }
 };
