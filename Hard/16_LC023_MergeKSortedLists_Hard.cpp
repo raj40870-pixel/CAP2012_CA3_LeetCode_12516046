@@ -1,35 +1,53 @@
-/**
- * Course: CAP2012 - Data Structures
- * Assessment: CA3 (LeetCode Problem Solving using C/C++)
- * Section: D1P2501 | Group: 1
- * Student Name: Kamaljit
- * Registration Number: 12516046
- * 
- * Problem 16: LeetCode 023 - Merge k Sorted Lists
- * Level: Hard
- * Unit: III
- * Topics: Linked lists, traversal, merging
- * LeetCode URL: https://leetcode.com/problems/merge-k-sorted-lists/
- *
- * Approach:
- * - [To be documented upon solution completion]
- *
- * Complexity:
- * - Time Complexity: O(...)
- * - Space Complexity: O(...)
- */
+// Student Name: Kamaljit
+// Registration Number: 12516046
+// Problem: LeetCode 023 - Merge k Sorted Lists
 
-#include <iostream>
 #include <vector>
-#include <string>
-#include <stack>
-#include <queue>
-#include <algorithm>
-
 using namespace std;
 
-// Solution class skeleton:
+struct ListNode {
+    int val;
+    ListNode *next;
+    ListNode() : val(0), next(nullptr) {}
+    ListNode(int x) : val(x), next(nullptr) {}
+    ListNode(int x, ListNode *next) : val(x), next(next) {}
+};
+
 class Solution {
+private:
+    ListNode* mergeTwoLists(ListNode* l1, ListNode* l2) {
+        ListNode dummy(0);
+        ListNode* tail = &dummy;
+
+        while (l1 != nullptr && l2 != nullptr) {
+            if (l1->val <= l2->val) {
+                tail->next = l1;
+                l1 = l1->next;
+            } else {
+                tail->next = l2;
+                l2 = l2->next;
+            }
+            tail = tail->next;
+        }
+
+        tail->next = (l1 != nullptr) ? l1 : l2;
+        return dummy.next;
+    }
+
 public:
-    // Paste/Write C++ solution here
+    ListNode* mergeKLists(vector<ListNode*>& lists) {
+        if (lists.empty()) return nullptr;
+
+        int interval = 1;
+        int n = lists.size();
+
+        while (interval < n) {
+            for (int i = 0; i + interval < n; i += interval * 2) {
+                lists[i] = mergeTwoLists(lists[i], lists[i + interval]);
+            }
+            interval *= 2;
+        }
+
+        return lists[0];
+    }
 };
