@@ -1,35 +1,47 @@
-/**
- * Course: CAP2012 - Data Structures
- * Assessment: CA3 (LeetCode Problem Solving using C/C++)
- * Section: D1P2501 | Group: 1
- * Student Name: Kamaljit
- * Registration Number: 12516046
- * 
- * Problem 15: LeetCode 224 - Basic Calculator
- * Level: Hard
- * Unit: IV
- * Topics: Stack, expression evaluation
- * LeetCode URL: https://leetcode.com/problems/basic-calculator/
- *
- * Approach:
- * - [To be documented upon solution completion]
- *
- * Complexity:
- * - Time Complexity: O(...)
- * - Space Complexity: O(...)
- */
+// Student Name: Kamaljit
+// Registration Number: 12516046
+// Problem: LeetCode 224 - Basic Calculator
 
-#include <iostream>
-#include <vector>
 #include <string>
 #include <stack>
-#include <queue>
-#include <algorithm>
-
+#include <cctype>
 using namespace std;
 
-// Solution class skeleton:
 class Solution {
 public:
-    // Paste/Write C++ solution here
+    int calculate(string s) {
+        stack<int> st;
+        long long result = 0;
+        long long num = 0;
+        int sign = 1;
+
+        for (int i = 0; i < s.length(); i++) {
+            char c = s[i];
+
+            if (isdigit(c)) {
+                num = num * 10 + (c - '0');
+            } else if (c == '+') {
+                result += sign * num;
+                num = 0;
+                sign = 1;
+            } else if (c == '-') {
+                result += sign * num;
+                num = 0;
+                sign = -1;
+            } else if (c == '(') {
+                st.push(result);
+                st.push(sign);
+                result = 0;
+                sign = 1;
+            } else if (c == ')') {
+                result += sign * num;
+                num = 0;
+                result *= st.top(); st.pop();
+                result += st.top(); st.pop();
+            }
+        }
+
+        result += sign * num;
+        return result;
+    }
 };

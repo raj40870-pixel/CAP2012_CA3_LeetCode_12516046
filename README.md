@@ -2,7 +2,7 @@
 
 ![C++](https://img.shields.io/badge/Language-C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)
 ![Status](https://img.shields.io/badge/Status-In%20Progress-blue?style=for-the-badge)
-![Problems](https://img.shields.io/badge/Problems%20Solved-14%2F16-orange?style=for-the-badge)
+![Problems](https://img.shields.io/badge/Problems%20Solved-15%2F16-orange?style=for-the-badge)
 
 ## 📌 Student Details
 - **Student Name:** Kamaljit
@@ -41,7 +41,7 @@ The repository is structured into three folders according to problem difficulty 
 | 12 | [056](https://leetcode.com/problems/merge-intervals/) | Merge Intervals | **Medium** | Unit II | ✅ Solved | [12_LC056](./Medium/12_LC056_MergeIntervals_Medium.cpp) |
 | 13 | [155](https://leetcode.com/problems/min-stack/) | Min Stack | **Medium** | Unit IV | ✅ Solved | [13_LC155](./Medium/13_LC155_MinStack_Medium.cpp) |
 | 14 | [622](https://leetcode.com/problems/design-circular-queue/) | Design Circular Queue | **Medium** | Unit IV | ✅ Solved | [14_LC622](./Medium/14_LC622_DesignCircularQueue_Medium.cpp) |
-| 15 | [224](https://leetcode.com/problems/basic-calculator/) | Basic Calculator | **Hard** | Unit IV | ⏳ Pending | [15_LC224](./Hard/15_LC224_BasicCalculator_Hard.cpp) |
+| 15 | [224](https://leetcode.com/problems/basic-calculator/) | Basic Calculator | **Hard** | Unit IV | ✅ Solved | [15_LC224](./Hard/15_LC224_BasicCalculator_Hard.cpp) |
 | 16 | [023](https://leetcode.com/problems/merge-k-sorted-lists/) | Merge k Sorted Lists | **Hard** | Unit III | ⏳ Pending | [16_LC023](./Hard/16_LC023_MergeKSortedLists_Hard.cpp) |
 
 ---
