@@ -1,35 +1,37 @@
-/**
- * Course: CAP2012 - Data Structures
- * Assessment: CA3 (LeetCode Problem Solving using C/C++)
- * Section: D1P2501 | Group: 1
- * Student Name: Kamaljit
- * Registration Number: 12516046
- * 
- * Problem 13: LeetCode 155 - Min Stack
- * Level: Medium
- * Unit: IV
- * Topics: Stack, PUSH, POP, TOP operations
- * LeetCode URL: https://leetcode.com/problems/min-stack/
- *
- * Approach:
- * - [To be documented upon solution completion]
- *
- * Complexity:
- * - Time Complexity: O(...)
- * - Space Complexity: O(...)
- */
+// Student Name: Kamaljit
+// Registration Number: 12516046
+// Problem: LeetCode 155 - Min Stack
 
-#include <iostream>
-#include <vector>
-#include <string>
 #include <stack>
-#include <queue>
-#include <algorithm>
-
 using namespace std;
 
-// Solution class skeleton:
-class Solution {
+class MinStack {
+private:
+    stack<int> st;
+    stack<int> minSt;
+
 public:
-    // Paste/Write C++ solution here
+    MinStack() {}
+
+    void push(int val) {
+        st.push(val);
+        if (minSt.empty() || val <= minSt.top()) {
+            minSt.push(val);
+        }
+    }
+
+    void pop() {
+        if (st.top() == minSt.top()) {
+            minSt.pop();
+        }
+        st.pop();
+    }
+
+    int top() {
+        return st.top();
+    }
+
+    int getMin() {
+        return minSt.top();
+    }
 };
