@@ -1,35 +1,31 @@
-/**
- * Course: CAP2012 - Data Structures
- * Assessment: CA3 (LeetCode Problem Solving using C/C++)
- * Section: D1P2501 | Group: 1
- * Student Name: Kamaljit
- * Registration Number: 12516046
- * 
- * Problem 08: LeetCode 020 - Valid Parentheses
- * Level: Easy
- * Unit: IV
- * Topics: Stack, PUSH/POP operations
- * LeetCode URL: https://leetcode.com/problems/valid-parentheses/
- *
- * Approach:
- * - [To be documented upon solution completion]
- *
- * Complexity:
- * - Time Complexity: O(...)
- * - Space Complexity: O(...)
- */
+// Student Name: Kamaljit
+// Registration Number: 12516046
+// Problem: LeetCode 020 - Valid Parentheses
 
-#include <iostream>
-#include <vector>
 #include <string>
 #include <stack>
-#include <queue>
-#include <algorithm>
-
 using namespace std;
 
-// Solution class skeleton:
 class Solution {
 public:
-    // Paste/Write C++ solution here
+    bool isValid(string s) {
+        stack<char> st;
+
+        for (char c : s) {
+            if (c == '(') {
+                st.push(')');
+            } else if (c == '{') {
+                st.push('}');
+            } else if (c == '[') {
+                st.push(']');
+            } else {
+                if (st.empty() || st.top() != c) {
+                    return false;
+                }
+                st.pop();
+            }
+        }
+
+        return st.empty();
+    }
 };

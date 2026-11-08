@@ -2,7 +2,7 @@
 
 ![C++](https://img.shields.io/badge/Language-C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)
 ![Status](https://img.shields.io/badge/Status-In%20Progress-blue?style=for-the-badge)
-![Problems](https://img.shields.io/badge/Problems%20Solved-7%2F16-orange?style=for-the-badge)
+![Problems](https://img.shields.io/badge/Problems%20Solved-8%2F16-orange?style=for-the-badge)
 
 ## 📌 Student Details
 - **Student Name:** Kamaljit
@@ -34,7 +34,7 @@ The repository is structured into three folders according to problem difficulty 
 | 05 | [509](https://leetcode.com/problems/fibonacci-number/) | Fibonacci Number | **Easy** | Unit IV | ✅ Solved | [05_LC509](./Easy/05_LC509_FibonacciNumber_Easy.cpp) |
 | 06 | [206](https://leetcode.com/problems/reverse-linked-list/) | Reverse Linked List | **Easy** | Unit III | ✅ Solved | [06_LC206](./Easy/06_LC206_ReverseLinkedList_Easy.cpp) |
 | 07 | [083](https://leetcode.com/problems/remove-duplicates-from-sorted-list/) | Remove Duplicates from Sorted List | **Easy** | Unit III | ✅ Solved | [07_LC083](./Easy/07_LC083_RemoveDuplicatesSortedList_Easy.cpp) |
-| 08 | [020](https://leetcode.com/problems/valid-parentheses/) | Valid Parentheses | **Easy** | Unit IV | ⏳ Pending | [08_LC020](./Easy/08_LC020_ValidParentheses_Easy.cpp) |
+| 08 | [020](https://leetcode.com/problems/valid-parentheses/) | Valid Parentheses | **Easy** | Unit IV | ✅ Solved | [08_LC020](./Easy/08_LC020_ValidParentheses_Easy.cpp) |
 | 09 | [232](https://leetcode.com/problems/implement-queue-using-stacks/) | Implement Queue using Stacks | **Easy** | Unit IV | ⏳ Pending | [09_LC232](./Easy/09_LC232_ImplementQueueUsingStacks_Easy.cpp) |
 | 10 | [189](https://leetcode.com/problems/rotate-array/) | Rotate Array | **Medium** | Unit II | ⏳ Pending | [10_LC189](./Medium/10_LC189_RotateArray_Medium.cpp) |
 | 11 | [019](https://leetcode.com/problems/remove-nth-node-from-the-end-of-list/) | Remove Nth Node from the End of List | **Medium** | Unit III | ⏳ Pending | [11_LC019](./Medium/11_LC019_RemoveNthNodeFromEnd_Medium.cpp) |
