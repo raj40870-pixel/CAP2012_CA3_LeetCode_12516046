@@ -1,35 +1,28 @@
-/**
- * Course: CAP2012 - Data Structures
- * Assessment: CA3 (LeetCode Problem Solving using C/C++)
- * Section: D1P2501 | Group: 1
- * Student Name: Kamaljit
- * Registration Number: 12516046
- * 
- * Problem 07: LeetCode 083 - Remove Duplicates from Sorted List
- * Level: Easy
- * Unit: III
- * Topics: Linked list, traversal, deletion
- * LeetCode URL: https://leetcode.com/problems/remove-duplicates-from-sorted-list/
- *
- * Approach:
- * - [To be documented upon solution completion]
- *
- * Complexity:
- * - Time Complexity: O(...)
- * - Space Complexity: O(...)
- */
+// Student Name: Kamaljit
+// Registration Number: 12516046
+// Problem: LeetCode 083 - Remove Duplicates from Sorted List
 
-#include <iostream>
-#include <vector>
-#include <string>
-#include <stack>
-#include <queue>
-#include <algorithm>
+struct ListNode {
+    int val;
+    ListNode *next;
+    ListNode() : val(0), next(nullptr) {}
+    ListNode(int x) : val(x), next(nullptr) {}
+    ListNode(int x, ListNode *next) : val(x), next(next) {}
+};
 
-using namespace std;
-
-// Solution class skeleton:
 class Solution {
 public:
-    // Paste/Write C++ solution here
+    ListNode* deleteDuplicates(ListNode* head) {
+        ListNode* curr = head;
+
+        while (curr != nullptr && curr->next != nullptr) {
+            if (curr->val == curr->next->val) {
+                curr->next = curr->next->next;
+            } else {
+                curr = curr->next;
+            }
+        }
+
+        return head;
+    }
 };
