@@ -1,35 +1,28 @@
-/**
- * Course: CAP2012 - Data Structures
- * Assessment: CA3 (LeetCode Problem Solving using C/C++)
- * Section: D1P2501 | Group: 1
- * Student Name: Kamaljit
- * Registration Number: 12516046
- * 
- * Problem 06: LeetCode 206 - Reverse Linked List
- * Level: Easy
- * Unit: III
- * Topics: Singly linked list, pointers, traversal
- * LeetCode URL: https://leetcode.com/problems/reverse-linked-list/
- *
- * Approach:
- * - [To be documented upon solution completion]
- *
- * Complexity:
- * - Time Complexity: O(...)
- * - Space Complexity: O(...)
- */
+// Student Name: Kamaljit
+// Registration Number: 12516046
+// Problem: LeetCode 206 - Reverse Linked List
 
-#include <iostream>
-#include <vector>
-#include <string>
-#include <stack>
-#include <queue>
-#include <algorithm>
+struct ListNode {
+    int val;
+    ListNode *next;
+    ListNode() : val(0), next(nullptr) {}
+    ListNode(int x) : val(x), next(nullptr) {}
+    ListNode(int x, ListNode *next) : val(x), next(next) {}
+};
 
-using namespace std;
-
-// Solution class skeleton:
 class Solution {
 public:
-    // Paste/Write C++ solution here
+    ListNode* reverseList(ListNode* head) {
+        ListNode* prev = nullptr;
+        ListNode* curr = head;
+
+        while (curr != nullptr) {
+            ListNode* next = curr->next;
+            curr->next = prev;
+            prev = curr;
+            curr = next;
+        }
+
+        return prev;
+    }
 };
