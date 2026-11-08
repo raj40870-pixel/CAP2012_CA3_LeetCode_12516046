@@ -1,35 +1,23 @@
-/**
- * Course: CAP2012 - Data Structures
- * Assessment: CA3 (LeetCode Problem Solving using C/C++)
- * Section: D1P2501 | Group: 1
- * Student Name: Kamaljit
- * Registration Number: 12516046
- * 
- * Problem 01: LeetCode 088 - Merge Sorted Array
- * Level: Easy
- * Unit: II
- * Topics: Arrays, merging
- * LeetCode URL: https://leetcode.com/problems/merge-sorted-array/
- *
- * Approach:
- * - [To be documented upon solution completion]
- *
- * Complexity:
- * - Time Complexity: O(...)
- * - Space Complexity: O(...)
- */
+// Student Name: Kamaljit
+// Registration Number: 12516046
+// Problem: LeetCode 088 - Merge Sorted Array
 
-#include <iostream>
 #include <vector>
-#include <string>
-#include <stack>
-#include <queue>
-#include <algorithm>
-
 using namespace std;
 
-// Solution class skeleton:
 class Solution {
 public:
-    // Paste/Write C++ solution here
+    void merge(vector<int>& nums1, int m, vector<int>& nums2, int n) {
+        int i = m - 1;
+        int j = n - 1;
+        int k = m + n - 1;
+
+        while (j >= 0) {
+            if (i >= 0 && nums1[i] > nums2[j]) {
+                nums1[k--] = nums1[i--];
+            } else {
+                nums1[k--] = nums2[j--];
+            }
+        }
+    }
 };
