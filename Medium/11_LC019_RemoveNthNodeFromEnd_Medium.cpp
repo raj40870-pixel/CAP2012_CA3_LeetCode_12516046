@@ -1,35 +1,33 @@
-/**
- * Course: CAP2012 - Data Structures
- * Assessment: CA3 (LeetCode Problem Solving using C/C++)
- * Section: D1P2501 | Group: 1
- * Student Name: Kamaljit
- * Registration Number: 12516046
- * 
- * Problem 11: LeetCode 019 - Remove Nth Node from the End of List
- * Level: Medium
- * Unit: III
- * Topics: Linked list, Traversal, Deletion
- * LeetCode URL: https://leetcode.com/problems/remove-nth-node-from-the-end-of-list/
- *
- * Approach:
- * - [To be documented upon solution completion]
- *
- * Complexity:
- * - Time Complexity: O(...)
- * - Space Complexity: O(...)
- */
+// Student Name: Kamaljit
+// Registration Number: 12516046
+// Problem: LeetCode 019 - Remove Nth Node From End of List
 
-#include <iostream>
-#include <vector>
-#include <string>
-#include <stack>
-#include <queue>
-#include <algorithm>
+struct ListNode {
+    int val;
+    ListNode *next;
+    ListNode() : val(0), next(nullptr) {}
+    ListNode(int x) : val(x), next(nullptr) {}
+    ListNode(int x, ListNode *next) : val(x), next(next) {}
+};
 
-using namespace std;
-
-// Solution class skeleton:
 class Solution {
 public:
-    // Paste/Write C++ solution here
+    ListNode* removeNthFromEnd(ListNode* head, int n) {
+        ListNode dummy(0);
+        dummy.next = head;
+        ListNode* fast = &dummy;
+        ListNode* slow = &dummy;
+
+        for (int i = 0; i < n; i++) {
+            fast = fast->next;
+        }
+
+        while (fast->next != nullptr) {
+            fast = fast->next;
+            slow = slow->next;
+        }
+
+        slow->next = slow->next->next;
+        return dummy.next;
+    }
 };
