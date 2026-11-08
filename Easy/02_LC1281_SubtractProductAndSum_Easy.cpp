@@ -1,35 +1,20 @@
-/**
- * Course: CAP2012 - Data Structures
- * Assessment: CA3 (LeetCode Problem Solving using C/C++)
- * Section: D1P2501 | Group: 1
- * Student Name: Kamaljit
- * Registration Number: 12516046
- * 
- * Problem 02: LeetCode 1281 - Subtract the Product and Sum of Digits of an Integer
- * Level: Easy
- * Unit: I
- * Topics: Loops, control structures, arithmetic
- * LeetCode URL: https://leetcode.com/problems/subtract-the-product-and-sum-of-digits-of-an-integer/
- *
- * Approach:
- * - [To be documented upon solution completion]
- *
- * Complexity:
- * - Time Complexity: O(...)
- * - Space Complexity: O(...)
- */
+// Student Name: Kamaljit
+// Registration Number: 12516046
+// Problem: LeetCode 1281 - Subtract the Product and Sum of Digits of an Integer
 
-#include <iostream>
-#include <vector>
-#include <string>
-#include <stack>
-#include <queue>
-#include <algorithm>
-
-using namespace std;
-
-// Solution class skeleton:
 class Solution {
 public:
-    // Paste/Write C++ solution here
+    int subtractProductAndSum(int n) {
+        int prod = 1;
+        int sum = 0;
+
+        while (n > 0) {
+            int digit = n % 10;
+            prod *= digit;
+            sum += digit;
+            n /= 10;
+        }
+
+        return prod - sum;
+    }
 };

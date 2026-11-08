@@ -2,7 +2,7 @@
 
 ![C++](https://img.shields.io/badge/Language-C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)
 ![Status](https://img.shields.io/badge/Status-In%20Progress-blue?style=for-the-badge)
-![Problems](https://img.shields.io/badge/Problems%20Solved-1%2F16-orange?style=for-the-badge)
+![Problems](https://img.shields.io/badge/Problems%20Solved-2%2F16-orange?style=for-the-badge)
 
 ## 📌 Student Details
 - **Student Name:** Kamaljit
@@ -28,7 +28,7 @@ The repository is structured into three folders according to problem difficulty 
 | S.No | LeetCode # | Problem Name | Difficulty | Unit | Status | Solution Link |
 | :---: | :---: | :--- | :---: | :---: | :---: | :--- |
 | 01 | [088](https://leetcode.com/problems/merge-sorted-array/) | Merge Sorted Array | **Easy** | Unit II | ✅ Solved | [01_LC088](./Easy/01_LC088_MergeSortedArray_Easy.cpp) |
-| 02 | [1281](https://leetcode.com/problems/subtract-the-product-and-sum-of-digits-of-an-integer/) | Subtract the Product and Sum of Digits of an Integer | **Easy** | Unit I | ⏳ Pending | [02_LC1281](./Easy/02_LC1281_SubtractProductAndSum_Easy.cpp) |
+| 02 | [1281](https://leetcode.com/problems/subtract-the-product-and-sum-of-digits-of-an-integer/) | Subtract the Product and Sum of Digits of an Integer | **Easy** | Unit I | ✅ Solved | [02_LC1281](./Easy/02_LC1281_SubtractProductAndSum_Easy.cpp) |
 | 03 | [026](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) | Remove Duplicates from Sorted Array | **Easy** | Unit II | ⏳ Pending | [03_LC026](./Easy/03_LC026_RemoveDuplicatesSortedArray_Easy.cpp) |
 | 04 | [027](https://leetcode.com/problems/remove-element/) | Remove Element | **Easy** | Unit II | ⏳ Pending | [04_LC027](./Easy/04_LC027_RemoveElement_Easy.cpp) |
 | 05 | [509](https://leetcode.com/problems/fibonacci-number/) | Fibonacci Number | **Easy** | Unit IV | ⏳ Pending | [05_LC509](./Easy/05_LC509_FibonacciNumber_Easy.cpp) |
