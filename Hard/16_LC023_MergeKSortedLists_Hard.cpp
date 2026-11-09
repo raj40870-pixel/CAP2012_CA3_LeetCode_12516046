@@ -1,7 +1,3 @@
-// Student Name: Kamaljit
-// Registration Number: 12516046
-// Problem: LeetCode 023 - Merge k Sorted Lists
-
 #include <vector>
 using namespace std;
 

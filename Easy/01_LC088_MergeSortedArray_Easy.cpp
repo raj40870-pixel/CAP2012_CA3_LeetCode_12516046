@@ -1,7 +1,3 @@
-// Student Name: Kamaljit
-// Registration Number: 12516046
-// Problem: LeetCode 088 - Merge Sorted Array
-
 #include <vector>
 using namespace std;
 

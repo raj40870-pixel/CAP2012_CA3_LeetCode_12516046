@@ -1,7 +1,3 @@
-// Student Name: Kamaljit
-// Registration Number: 12516046
-// Problem: LeetCode 232 - Implement Queue using Stacks
-
 #include <stack>
 using namespace std;
 

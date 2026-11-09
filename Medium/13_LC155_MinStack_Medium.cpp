@@ -1,7 +1,3 @@
-// Student Name: Kamaljit
-// Registration Number: 12516046
-// Problem: LeetCode 155 - Min Stack
-
 #include <stack>
 using namespace std;
 

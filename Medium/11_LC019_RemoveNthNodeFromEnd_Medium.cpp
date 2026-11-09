@@ -1,7 +1,3 @@
-// Student Name: Kamaljit
-// Registration Number: 12516046
-// Problem: LeetCode 019 - Remove Nth Node From End of List
-
 struct ListNode {
     int val;
     ListNode *next;

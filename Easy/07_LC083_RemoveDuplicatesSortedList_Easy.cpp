@@ -1,7 +1,3 @@
-// Student Name: Kamaljit
-// Registration Number: 12516046
-// Problem: LeetCode 083 - Remove Duplicates from Sorted List
-
 struct ListNode {
     int val;
     ListNode *next;

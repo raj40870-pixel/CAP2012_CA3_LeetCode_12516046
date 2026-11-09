@@ -1,7 +1,3 @@
-// Student Name: Kamaljit
-// Registration Number: 12516046
-// Problem: LeetCode 224 - Basic Calculator
-
 #include <string>
 #include <stack>
 #include <cctype>

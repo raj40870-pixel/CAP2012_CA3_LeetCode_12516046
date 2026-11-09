@@ -1,7 +1,3 @@
-// Student Name: Kamaljit
-// Registration Number: 12516046
-// Problem: LeetCode 056 - Merge Intervals
-
 #include <vector>
 #include <algorithm>
 using namespace std;

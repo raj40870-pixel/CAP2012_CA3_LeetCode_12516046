@@ -1,7 +1,3 @@
-// Student Name: Kamaljit
-// Registration Number: 12516046
-// Problem: LeetCode 622 - Design Circular Queue
-
 #include <vector>
 using namespace std;
 

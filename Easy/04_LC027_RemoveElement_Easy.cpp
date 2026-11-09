@@ -1,7 +1,3 @@
-// Student Name: Kamaljit
-// Registration Number: 12516046
-// Problem: LeetCode 027 - Remove Element
-
 #include <vector>
 using namespace std;
 

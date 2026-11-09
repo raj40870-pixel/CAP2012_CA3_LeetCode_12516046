@@ -1,7 +1,3 @@
-// Student Name: Kamaljit
-// Registration Number: 12516046
-// Problem: LeetCode 206 - Reverse Linked List
-
 struct ListNode {
     int val;
     ListNode *next;

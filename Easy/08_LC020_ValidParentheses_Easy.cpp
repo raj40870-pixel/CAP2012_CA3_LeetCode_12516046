@@ -1,7 +1,3 @@
-// Student Name: Kamaljit
-// Registration Number: 12516046
-// Problem: LeetCode 020 - Valid Parentheses
-
 #include <string>
 #include <stack>
 using namespace std;
