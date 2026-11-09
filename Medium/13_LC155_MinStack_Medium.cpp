@@ -1,6 +1,3 @@
-#include <stack>
-using namespace std;
-
 class MinStack {
 private:
     stack<int> st;

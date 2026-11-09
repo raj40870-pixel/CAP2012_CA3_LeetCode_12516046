@@ -1,6 +1,3 @@
-#include <vector>
-using namespace std;
-
 class Solution {
 private:
     void reverseArray(vector<int>& nums, int start, int end) {

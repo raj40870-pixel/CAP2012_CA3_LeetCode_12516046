@@ -1,6 +1,3 @@
-#include <stack>
-using namespace std;
-
 class MyQueue {
 private:
     stack<int> inStack;
